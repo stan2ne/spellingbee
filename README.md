@@ -1,6 +1,17 @@
-# Pronunciation Practice App
+# Pronunciation Practice App (Spelling Bee Alıştırması)
 
-Modern, temiz ve üretime hazır İngilizce telaffuz alıştırma uygulaması.
+Bu proje, oğlumun yaklaşan İngilizce "Spelling Bee" (kelime telaffuz ve heceleme) yarışması için hazırlanmasına yardımcı olmak amacıyla geliştirilmiştir. Uygulama, öğretmeninin verdiği kelime listesi üzerinden interaktif bir şekilde telaffuz alıştırması yapabilmesini sağlar. Modern, temiz ve üretime hazır bir yapıya sahiptir.
+
+## Kelime Listesi
+
+Uygulamada kullanılan tüm kelimeler `src/data/words.json` dosyasında tutulmaktadır. Kelimeler harf sayılarına göre gruplandırılmıştır. Yeni kelimeler eklemek veya mevcut olanları değiştirmek isterseniz, bu dosyayı doğrudan düzenleyebilirsiniz:
+
+```json
+{
+  "3": ["fur", "ear", "eye"],
+  "4": ["eggs", "wing", "body"]
+}
+```
 
 ## Özellikler
 
