@@ -7,7 +7,7 @@ Modern, temiz ve üretime hazır İngilizce telaffuz alıştırma uygulaması.
 - Kelimeleri harf uzunluğuna göre seçme (`3`, `4`, `5`, `6`, `7`, `8`)
 - Kelimeyi tek tek gösterme
 - Mikrofon ile telaffuz denemesi
-- Tarayıcıda ses kaydı alıp backend STT servisine gönderme
+- Tarayıcı Web Speech API ile konuşma tanıma (sunucu gerekmez)
 - Esnek doğrulama:
   - Harf duyarsız eşleşme
   - Küçük yazım farkları için Levenshtein toleransı
@@ -24,14 +24,16 @@ Modern, temiz ve üretime hazır İngilizce telaffuz alıştırma uygulaması.
 - React + Vite + TypeScript
 - TailwindCSS
 - Zustand
-- Vercel Serverless Function
-- OpenAI Audio Transcriptions (`whisper-1`)
+- Web Speech API (tarayıcı native)
 
-## Ortam Değişkenleri
+## Tarayıcı Desteği
 
-Vercel proje ayarlarında şu değişken zorunludur:
-
-- `OPENAI_API_KEY`
+| Tarayıcı | Durum |
+|---|---|
+| Chrome / Edge | ✅ Çalışır |
+| Safari | ✅ Çalışır |
+| Brave | ⚠️ Shields ayarından mikrofona izin ver |
+| Firefox | ❌ Web Speech API desteklenmiyor |
 
 ## Yerel Çalıştırma
 
@@ -39,8 +41,6 @@ Vercel proje ayarlarında şu değişken zorunludur:
 npm install
 npm run dev
 ```
-
-Not: Sadece `vite` ile yerelde çalışırken `/api/transcribe` endpoint'i yoktur. Gerçek transkripsiyon testi için Vercel deploy URL'sini kullan.
 
 ## Production Build
 
@@ -54,5 +54,3 @@ npm run preview
 ```bash
 vercel --prod
 ```
-
-Deploy sonrası Vercel proje ayarlarından `OPENAI_API_KEY` ekleyip tekrar deploy et.
