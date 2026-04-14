@@ -1,0 +1,8 @@
+{
+  "3": ["fur", "ear", "eye", "leg", "bus", "ice", "gas", "tea", "ask", "row", "jar", "arm", "ski"],
+  "4": ["eggs", "wing", "body", "ears", "eyes", "head", "legs", "hunt", "peck", "worm", "calm", "flow", "heat", "melt", "open", "pour", "salt", "news", "boat", "poor", "sick", "lamp", "sink", "full", "left", "cook", "hide", "face", "foot", "hand", "knee", "nose", "grab", "pass", "rude", "wash", "land", "wood", "camp", "fish", "hike", "surf", "blow", "time", "week"],
+  "5": ["gills", "skin", "smart", "mouth", "creep", "fight", "steam", "cream", "fruit", "pasta", "salad", "horse", "truck", "clerk", "enter", "visit", "chair", "clock", "couch", "clean", "dirty", "tired", "baker", "bored", "steal", "knock", "share", "reuse", "smoke", "trash", "diary", "paper", "shelf", "scale", "escape", "fierce", "gentle", "strong"],
+  "6": ["squawk", "freeze", "liquid", "candle", "icicle", "kettle", "closed", "coffee", "letter", "travel", "hungry", "greedy", "litter", "polite", "laptop", "tablet", "reduce", "rescue"],
+  "7": ["mammals", "berries", "patient", "balloon", "popcorn", "freezer", "mixture", "crowded", "bathtub", "kitchen", "machine"],
+  "8": ["computer", "feathers", "pinecone", "airplane", "sunlight", "landfill"]
+}
